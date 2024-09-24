@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Caluculator.css";
+import "../styles/Calculator.css";
 
 const Calculator = () => {
   const [input, setInput] = useState("");
