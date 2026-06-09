@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Axiom 🌙☀️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Axiom is a stylish React calculator with a richer interface than a basic keypad. It supports standard arithmetic, scientific functions, memory controls, keyboard input, live result previews, saved history, Solar/Lunar theme switching, and degree or radian angle modes.
+
+## Features
+
+- Responsive two-panel layout with a polished glass-style calculator surface
+- Standard operators: addition, subtraction, multiplication, division, powers, percentages, and parentheses
+- Scientific functions: `sin`, `cos`, `tan`, `sqrt`, `log`, and `ln`
+- Constants for `pi` and `e`
+- Memory tools: `MC`, `MR`, `M+`, and `M-`
+- Persistent calculation history with quick result restore
+- Degree and radian angle modes for trigonometry
+- 🌙 Lunar and ☀️ Solar themes saved between sessions
+- 📋 One-click result copying
+- ✨ Friendly status, memory, and history touches
+- Live preview while typing expressions
+- Keyboard support for numbers, operators, `Enter`, `Escape`, and `Backspace`
+- Safer custom expression parser instead of JavaScript `eval`
+
+## Tech Stack
+
+- React 18
+- Create React App
+- CSS Grid and responsive custom CSS
+- React Testing Library
+
+## Getting Started
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the local development server:
+
+```bash
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Available Scripts
 
-In the project directory, you can run:
+Run the test suite:
 
-### `npm start`
+```bash
+npm test
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Build the production bundle:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm run build
+```
 
-### `npm test`
+The optimized build will be created in the `build` folder.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+```text
+src/
+  Components/
+    Calculator.js
+  styles/
+    Calculator.css
+  App.js
+  App.test.js
+  index.js
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Notes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Trigonometric functions can run in degree or radian mode. History, theme, and angle mode are saved in `localStorage`.
